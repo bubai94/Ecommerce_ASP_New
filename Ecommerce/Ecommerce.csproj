@@ -6,4 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityframeworkCore" Version="6.0"></PackageReference>
+		<PackageReference Include="Microsoft.EntityframeworkCore.Tools" Version="6.0"></PackageReference>
+		<PackageReference Include="Microsoft.EntityframeworkCore.SqlServer" Version="6.0"></PackageReference>
+
+	</ItemGroup>
+
 </Project>
