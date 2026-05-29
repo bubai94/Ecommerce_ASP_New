@@ -1,3 +1,6 @@
+using Ecommerce.Models;
+using Microsoft.EntityFrameworkCore;
+
 namespace Ecommerce
 {
     public class Program
@@ -8,6 +11,9 @@ namespace Ecommerce
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<dbstruc>(options => options.UseSqlServer(
+            builder.Configuration.GetConnectionString("myConnection")));
 
             var app = builder.Build();
 
